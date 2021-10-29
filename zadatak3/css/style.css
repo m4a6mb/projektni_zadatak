@@ -1,0 +1,153 @@
+:root{
+    --color-0: #2d3134;
+    --color-1: #444941;
+    --color-2: #32502E;
+    --color-3: #406343;
+    --color-4: #ECE7B4;
+    --color-5: #F3EFCC;
+    --color-6: #fdfbeb;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-6);
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header .logo{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo a{
+    display: block;
+    width: 100%;
+}
+header .logo img{
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color-0);
+}
+header nav{
+    width: 100%;
+    background-color: var(--color-1);
+    display: none;
+}
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header nav ul li{
+    width: 100%;
+}
+header nav ul li a{
+    padding: 1.25rem 1.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--color-5);
+    font-weight: 900;
+    width: 100%;
+}
+header nav ul li a:hover{
+    background-color: var(--color-4);
+    color: var(--color-0);
+}
+header .banner{
+    padding: 1.5rem 0.5rem 1.5rem 1.5rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-5);
+    width: calc(40px + 1.5rem + 0.5rem);
+    padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+}
+.open{
+    display: flex;
+}
+.content-wrapper{
+    width: 100%;
+    padding: 0 1.5rem;
+}
+main figure{
+    width: 100%;
+    margin: 0;
+}
+main figure img{
+    width: 100%;
+}
+@media only screen and (min-width: 900px) {
+    header{
+        display: block;
+        padding: 0;
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo{
+        width: 300px;
+    }
+    header nav ul{
+        max-width: 1400px;
+        flex-direction: row;
+    }
+    header nav ul li{
+        width: auto;
+    }
+    header nav ul li a{
+        padding: 1.5rem;
+        width: auto;
+    }
+    header .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: var(--color-0);
+        padding: 0;
+    }
+    header .banner .banner-content{
+        max-width: 1400px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 1.5rem;
+    }
+    .menu{
+        display: none;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .content-wrapper{
+        max-width: 1400px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    main figure{
+        float: left;
+        width: 800px;
+        margin-right: 2rem;
+    }
+    main figure img{
+        width: 800px;
+    }
+}
