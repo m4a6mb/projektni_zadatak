@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <title>Hunting - Portal za lovce - Početna</title>
     <script>
-
         let menu;
         let main_nav;
         let open_nav = false;
@@ -24,12 +25,12 @@
 
             menu.addEventListener("click", (e) => {
                 e.preventDefault();
-                openClose(); 
+                openClose();
             });
         });
 
         const openClose = () => {
-            if (open_nav){
+            if (open_nav) {
                 main_nav.classList.remove("open");
                 open_nav = false;
             } else {
@@ -44,7 +45,7 @@
         <div class="banner">
             <div class="banner-content">
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.svg" alt="Hunting logo"/></a>
+                    <a href="index.html"><img src="img/logo.svg" alt="Hunting logo" /></a>
                 </div>
             </div>
         </div>
@@ -59,7 +60,7 @@
                     <a href="index.html">Početna</a>
                 </li>
                 <li>
-                    <a href="novosti.html" >Novosti</a>
+                    <a href="novosti.html">Novosti</a>
                 </li>
                 <li>
                     <a href="o-nama.html">O nama</a>
@@ -73,23 +74,57 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="home">
         <div class="content-wrapper">
-            <h1>HUNTING - Portal za lovce</h1>
+            <h1 class="my-4">HUNTING - Portal za lovce</h1>
             <figure>
                 <img src="img/hunting.jpg" alt="Lov na ptice" title="Hunting" />
                 <figcaption>Lov na ptice</figcaption>
             </figure>
-            <h2>Divlja patka (Anas platyrhynchos L.) je vrsta ptice iz porodice pataka (Anatidae)</h2>
+            <h2 class="mt-0 mb-2">
+                Divlja patka
+            </h2>
+            <span class="h4">
+                (Anas platyrhynchos L.) je vrsta ptice iz porodice pataka (Anatidae)
+            </span>
             <h3>Karakteristike</h3>
-            <p>Patke narastu do 60 cm veličine i teže 800-1400 g. Mužjak ima karakterističnu tamnozelenu glavu i vrat s bijelim, uskim ovratnikom. Tijelo im je s prednje strane smeđe, dok je ostatak tijela većinom bijelosive boje. Rep je bijeli, no srednja pera su crne boje i uvijena prema nazad. Kljun je žut, s izraženim zadebljanjem u prednjem dijelu. </p>
-            <p>Ženka je manja od mužjaka a njeno tijelo je posve prekriveno blagom, smeđom bojom s izraženim tamnosmeđim šarama koje posebno dolaze do izražaja na perju tijela. Kljun im je narančasti sa smeđom mrljom po sredini, te isto tako zadebljan u prednjem dijelu kao kod mužjaka. </p>
-            <p>Kod oba spola nožice su plosnate i narančaste s plovnim kožicama između prstiju. Puni raspon krila im je 80-100 cm a obično žive 5-10 godina, iako je zabilježen primjerak star 26 godina.</p>
+            <p>
+                Patke narastu do 60 cm veličine i teže 800-1400 g. Mužjak ima karakterističnu tamnozelenu glavu i vrat s
+                bijelim, uskim ovratnikom. Tijelo im je s prednje strane smeđe, dok je ostatak tijela većinom bijelosive
+                boje. Rep je bijeli, no srednja pera su crne boje i uvijena prema nazad. Kljun je žut, s izraženim
+                zadebljanjem u prednjem dijelu.
+            </p>
+            <p>
+                Ženka je manja od mužjaka a njeno tijelo je posve prekriveno blagom, smeđom bojom s izraženim
+                tamnosmeđim
+                šarama koje posebno dolaze do izražaja na perju tijela. Kljun im je narančasti sa smeđom mrljom po
+                sredini, te isto tako zadebljan u prednjem dijelu kao kod mužjaka.
+            </p>
+            <p>
+                Kod oba spola nožice su plosnate i narančaste s plovnim kožicama između prstiju. Puni raspon krila im je
+                80-100 cm a obično žive 5-10 godina, iako je zabilježen primjerak star 26 godina.
+            </p>
             <h3>Stanište</h3>
-            <p>Široko je rasprostranjena vrsta. Živi na području Europe, Azije, Sjeverne Amerike i Australije gdje nastanjuje vodene površine – jezera, rijeke, potoci, bare i umjetna jezerca. Češća je u kontinentalnom dijelu Hrvatske.</p>
+            <p>
+                Široko je rasprostranjena vrsta. Živi na području Europe, Azije, Sjeverne Amerike i Australije gdje
+                nastanjuje vodene površine – jezera, rijeke, potoci, bare i umjetna jezerca. Češća je u kontinentalnom
+                dijelu Hrvatske.
+            </p>
             <h3>Razmnožavanje</h3>
-            <p>Spolno su zreli s godinu dana i gnijezde se jednom godišnje u razdoblju od ožujka do svibnja. Ženka snese 5-15 jaja koja polaže na skrivena uz obalu, ponekad i na deblima vrba. Gnijezdo pravi od trave i listova, a unutrašnjost oblaže paperjem. Jaja su sivobijela, velika 58×41 mm. Na jajima sjedi 27-28 dana, dok mužjak čuva stražu. Kada ženka napušta jaja prekrije ih perjem koje je iščupala iz svog tijela.</p>
-            <p>Nakon otprilike 4 tjedna, pačići se izlegnu i ženka se i dalje sama brine o njima. Već sljedeći dan vodi ih u vodu na prvi plivanac i više se ne vraćaju u gnijezdo. Mladi potrkušci čvrsto se drže njene blizine ili provode vrijeme sakriveni u visokoj trski, a mami se vraćaju kada ih pozove karakterističnim kvakanjem. Osamostaljuju se nakon 50-60 dana.</p>
+            <p>
+                Spolno su zreli s godinu dana i gnijezde se jednom godišnje u razdoblju od ožujka do svibnja. Ženka
+                snese
+                5-15 jaja koja polaže na skrivena uz obalu, ponekad i na deblima vrba. Gnijezdo pravi od trave i
+                listova, a unutrašnjost oblaže paperjem. Jaja su sivobijela, velika 58×41 mm. Na jajima sjedi 27-28
+                dana, dok mužjak čuva stražu. Kada ženka napušta jaja prekrije ih perjem koje je iščupala iz svog
+                tijela.
+            </p>
+            <p>
+                Nakon otprilike 4 tjedna, pačići se izlegnu i ženka se i dalje sama brine o njima. Već sljedeći dan vodi
+                ih u vodu na prvi plivanac i više se ne vraćaju u gnijezdo. Mladi potrkušci čvrsto se drže njene blizine
+                ili provode vrijeme sakriveni u visokoj trski, a mami se vraćaju kada ih pozove karakterističnim
+                kvakanjem. Osamostaljuju se nakon 50-60 dana.
+            </p>
         </div>
     </main>
 </body>
