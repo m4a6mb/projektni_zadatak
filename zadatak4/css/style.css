@@ -2,7 +2,10 @@
     --color-0: #2d3134;
     --color-1: #444941;
     --color-2: #32502e;
+
     --color-3: #406343;
+    --color-x3: #9faca2;
+
     --color-4: #ece7b4;
     --color-5: #f3efcc;
     --color-6: #fdfbeb;
@@ -255,7 +258,69 @@ span {
 .pb-4 {
     padding-bottom: 1rem;
 }
-
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-1);
+}
+footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 0;
+    color: var(--color-5);
+    background-color: var(--color-0);
+    width: 100%;
+}
+footer .copyright svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5rem;
+}
+footer div{
+    width: 100%;
+    padding: 0 1.5rem;
+}
+footer .copyright a{
+    color: var(--color-5);
+}
+footer .copyright a:hover{
+    color: var(--color-x3);
+}
+footer ul li a,
+.footer-color{
+    color: var(--color-5);
+}
+footer ul li a:hover{
+    color: var(--color-x3);
+}
+footer ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+footer ul svg{
+    width: 30px;
+}
+footer ul li{
+    margin-right: 0.25rem;
+}
+footer ul li:last-child{
+    margin-right: 0;
+}
+footer p{
+    text-align: center;
+}
+a {
+    display: inline-block;
+}
+main{
+    clear: both;
+}
 @media only screen and (min-width: 900px) {
     header {
         display: block;
@@ -305,6 +370,15 @@ span {
     .content-wrapper {
         max-width: 1400px;
     }
+    footer div{
+        max-width: 1400px;
+    }
+    footer p{
+        text-align: left;
+    }
+    footer ul{
+        justify-content: left;
+    }
     h1,
     .h1 {
         font-size: 2.5rem;
@@ -320,6 +394,9 @@ span {
     h4,
     .h4 {
         font-size: 1.5rem;
+    }
+    footer ul svg{
+        width: 40px;
     }
 }
 @media only screen and (min-width: 1200px) {
