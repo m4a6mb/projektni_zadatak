@@ -9,7 +9,7 @@
 - [x] Zadatak 1
 - [x] Zadatak 2
 - [x] Zadatak 3
-- [ ] Zadatak 4
+- [x] Zadatak 4
 - [ ] Zadatak 5
 - [ ] Zadatak 6
 - [ ] Zadatak 7
