@@ -5,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             name="description"
-            content="Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća."
+            content="Portal za lovce i ljubitelje lova, divljači, životinja i prirode."
         />
         <meta
             name="keywords"
-            content="Haldenski gonič, gonič, norveška, pasmina"
+            content="hunting, lovac, lovački pas, lovište, lovačko društvo, lovački turizam, lovački portal"
         />
         <meta name="author" content="Martin Bondi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,8 +19,8 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Haldenski gonič - Hunting - Portal za lovce</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Početna - Hunting - Portal za lovce</title>
         <script>
             let menu;
             let main_nav;
@@ -34,8 +34,6 @@
                     e.preventDefault();
                     openClose();
                 });
-
-                galleryView();
             });
 
             const openClose = () => {
@@ -47,39 +45,6 @@
                     open_nav = true;
                 }
             };
-
-            let gallery;
-            let viewer;
-
-            const galleryView = () => {
-                gallery = document.querySelectorAll(".article-gallery > .figure-popup > a");
-
-                viewer = document.getElementById("viewer");
-
-                for(let i = 0; i < gallery.length; i++) 
-                {
-                    gallery[i].addEventListener("click", (e) => {
-                        e.preventDefault();
-
-                        let x = document.createElement("IMG");
-                        x.setAttribute("src", e.target.attributes['href'].value);
-                        viewer.appendChild(x);
-
-
-                        viewer.classList.add("viewer-open");
-
-                        
-                    });
-                }
-
-                viewer.addEventListener("click", (e) => {
-                    viewer.classList.remove("viewer-open");
-                    for(let i = 0; i < viewer.children.length; i++)
-                    {
-                        viewer.removeChild(viewer.children[i]);
-                    }
-                });
-            }
         </script>
     </head>
     <body>
@@ -87,8 +52,8 @@
             <div class="banner">
                 <div class="banner-content">
                     <div class="logo">
-                        <a href="../index.html"
-                            ><img src="../img/logo.svg" alt="Hunting logo"
+                        <a href="index.html"
+                            ><img src="img/logo.svg" alt="Hunting logo"
                         /></a>
                     </div>
                 </div>
@@ -104,71 +69,89 @@
             <nav id="main-nav">
                 <ul>
                     <li>
-                        <a href="../index.html">Početna</a>
+                        <a href="index.html">Početna</a>
                     </li>
                     <li>
-                        <a href="../novosti.html">Novosti</a>
+                        <a href="novosti.html">Novosti</a>
                     </li>
                     <li>
-                        <a href="../o-nama.html">O nama</a>
+                        <a href="o-nama.html">O nama</a>
                     </li>
                     <li>
-                        <a href="../galerija.html">Galerija</a>
+                        <a href="galerija.html">Galerija</a>
                     </li>
                     <li>
-                        <a href="../kontakt.html">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="home">
             <div class="content-wrapper">
-                <div class="article-gallery">
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic-stenci.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic-stenci_mala.jpg" alt="Štenci Haldenskog goniča" title="Štenci Haldenskog goniča" />
-                        </a>
-                        <figcaption>Slika štenaca</figcaption>
-                    </figure>
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic_mala.jpg" alt="Haldenski gonič" title="Haldenski gonič" />
-                        </a>
-                        <figcaption>Slika Haldenskog goniča</figcaption>
-                    </figure>
-                </div>
-                <p class="my-1 article-date">Objavljeno: <time datetime="2022-01-03">03.01.2022.</time></p>
-                <h1 class="my-4 custom-title">Haldenski gonič</h1>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća.
-                </p>
-                <p>
-                    Pasmina Haldenski gonič, kao i ostali norveški goniči, nije pas čopora. Halden Hound ima izražajnu trobojnu dlaku što pridonosi njezinoj atraktivnosti.
-                    Ova norveška pasmina se koristi za lov na zečeve, a ime je dobila po norveškom gradu Haldenu.
-                </p>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća. 
-                    Ova pasmina pasa koji love pomoću njuha je poznata po lakoći kojom graciozno juri za svojim plijenom-kunićem. Haldenski gonič je nastao križanjem jednog od izvorno norveških pasa s engleskim, njemačkim i švedskim goničima koji love pomoću njuha. 
-                </p>
-                <p>
-                    Iako je pasminski standard utemeljen u 1950-ima i često ih se vidi u Norveškoj, relativno su nepoznati u drugim zemljama ljubitelja pasa. Ova pasmina je vitke građe koja im omogućuje da budu jako brzi.
-                    U Norveškoj ih se smatra jednim od najboljih lovačkih pasa, jer posjeduju veliku izdržljivost i poznati su po tome da gone svoj plijen kilometrima bez umora i odustajanja. 
-                </p>
-                <p>
-                    Osim tijela stvorenog za brzinu i okretnost, ovi psi imaju mišićave kosti čvrstih kostiju. Uzgajivači haldenskih goniča nastoje očuvati idealan oblik šape, koja mora biti visoka i uska, a između prstiju bi trebale rasti guste dlake. Ovaj oblik šape pomaže kod očuvanja topline i daje psu veću stabilnost i elastičnost dok lovi i kreće se preko teškog terena prekrivenog snijegom.
-                </p>
-                <p>
-                    Haldenski gonič je možda građen elegantno i poznat je po tome što je izvrstan lovac, no ovaj pas ima i druge očaravajuće kvalitete. Posljednjih godina, ovaj čuveni lovac se razvio u divnog kućnog pratitelja.
-                    Kad lovi kuniće i lisice ova energična pasmina pokazuje samostalnost i veliku izdržljivost, no kod kuće je miroljubiv i privržen-idealan drug u dječjoj igri i savršeni pratitelj aktivnog gospodara.
-                </p>
-                <a class="back my-4" href="../novosti.html">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-                    </svg>
-                    <span>
-                        Povratak na novosti
+                <h1 class="my-4">HUNTING - Portal za lovce</h1>
+                <figure>
+                    <img
+                        src="img/hunting.jpg"
+                        alt="Lov na ptice"
+                        title="Hunting"
+                    />
+                    <figcaption>Lov na ptice</figcaption>
+                </figure>
+                <h2 class="mt-0 mb-2">
+                    Divlja patka
+                    <span class="h4 mt-2">
+                        (Anas platyrhynchos L.) je vrsta ptice iz porodice
+                        pataka (Anatidae)
                     </span>
-                </a>
+                </h2>
+                <h3>Karakteristike</h3>
+                <p>
+                    Patke narastu do 60 cm veličine i teže 800-1400 g. Mužjak
+                    ima karakterističnu tamnozelenu glavu i vrat s bijelim,
+                    uskim ovratnikom. Tijelo im je s prednje strane smeđe, dok
+                    je ostatak tijela većinom bijelosive boje. Rep je bijeli, no
+                    srednja pera su crne boje i uvijena prema nazad. Kljun je
+                    žut, s izraženim zadebljanjem u prednjem dijelu.
+                </p>
+                <p>
+                    Ženka je manja od mužjaka a njeno tijelo je posve prekriveno
+                    blagom, smeđom bojom s izraženim tamnosmeđim šarama koje
+                    posebno dolaze do izražaja na perju tijela. Kljun im je
+                    narančasti sa smeđom mrljom po sredini, te isto tako
+                    zadebljan u prednjem dijelu kao kod mužjaka.
+                </p>
+                <p>
+                    Kod oba spola nožice su plosnate i narančaste s plovnim
+                    kožicama između prstiju. Puni raspon krila im je 80-100 cm a
+                    obično žive 5-10 godina, iako je zabilježen primjerak star
+                    26 godina.
+                </p>
+                <h3>Stanište</h3>
+                <p>
+                    Široko je rasprostranjena vrsta. Živi na području Europe,
+                    Azije, Sjeverne Amerike i Australije gdje nastanjuje vodene
+                    površine – jezera, rijeke, potoci, bare i umjetna jezerca.
+                    Češća je u kontinentalnom dijelu Hrvatske.
+                </p>
+                <h3>Razmnožavanje</h3>
+                <p>
+                    Spolno su zreli s godinu dana i gnijezde se jednom godišnje
+                    u razdoblju od ožujka do svibnja. Ženka snese 5-15 jaja koja
+                    polaže na skrivena uz obalu, ponekad i na deblima vrba.
+                    Gnijezdo pravi od trave i listova, a unutrašnjost oblaže
+                    paperjem. Jaja su sivobijela, velika 58×41 mm. Na jajima
+                    sjedi 27-28 dana, dok mužjak čuva stražu. Kada ženka napušta
+                    jaja prekrije ih perjem koje je iščupala iz svog tijela.
+                </p>
+                <p>
+                    Nakon otprilike 4 tjedna, pačići se izlegnu i ženka se i
+                    dalje sama brine o njima. Već sljedeći dan vodi ih u vodu na
+                    prvi plivanac i više se ne vraćaju u gnijezdo. Mladi
+                    potrkušci čvrsto se drže njene blizine ili provode vrijeme
+                    sakriveni u visokoj trski, a mami se vraćaju kada ih pozove
+                    karakterističnim kvakanjem. Osamostaljuju se nakon 50-60
+                    dana.
+                </p>
             </div>
         </main>
         <footer class="mt-2">
@@ -221,7 +204,5 @@
                 </a>
             </p>
         </footer>
-        <div id="viewer" class="viewer">
-        </div>
     </body>
 </html>

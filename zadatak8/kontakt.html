@@ -5,12 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             name="description"
-            content="Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća."
+            content="Kontaktirajte nas u vezi svih informacija vezanih uz lovstvo, lovno streljaštvo, lovni turizam."
         />
-        <meta
-            name="keywords"
-            content="Haldenski gonič, gonič, norveška, pasmina"
-        />
+        <meta name="keywords" content="kontakt, karta, informacije, obrazac" />
         <meta name="author" content="Martin Bondi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,8 +16,8 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Haldenski gonič - Hunting - Portal za lovce</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Kontakt - Hunting - Portal za lovce</title>
         <script>
             let menu;
             let main_nav;
@@ -34,8 +31,6 @@
                     e.preventDefault();
                     openClose();
                 });
-
-                galleryView();
             });
 
             const openClose = () => {
@@ -47,39 +42,6 @@
                     open_nav = true;
                 }
             };
-
-            let gallery;
-            let viewer;
-
-            const galleryView = () => {
-                gallery = document.querySelectorAll(".article-gallery > .figure-popup > a");
-
-                viewer = document.getElementById("viewer");
-
-                for(let i = 0; i < gallery.length; i++) 
-                {
-                    gallery[i].addEventListener("click", (e) => {
-                        e.preventDefault();
-
-                        let x = document.createElement("IMG");
-                        x.setAttribute("src", e.target.attributes['href'].value);
-                        viewer.appendChild(x);
-
-
-                        viewer.classList.add("viewer-open");
-
-                        
-                    });
-                }
-
-                viewer.addEventListener("click", (e) => {
-                    viewer.classList.remove("viewer-open");
-                    for(let i = 0; i < viewer.children.length; i++)
-                    {
-                        viewer.removeChild(viewer.children[i]);
-                    }
-                });
-            }
         </script>
     </head>
     <body>
@@ -87,8 +49,8 @@
             <div class="banner">
                 <div class="banner-content">
                     <div class="logo">
-                        <a href="../index.html"
-                            ><img src="../img/logo.svg" alt="Hunting logo"
+                        <a href="index.html"
+                            ><img src="img/logo.svg" alt="Hunting logo"
                         /></a>
                     </div>
                 </div>
@@ -104,71 +66,105 @@
             <nav id="main-nav">
                 <ul>
                     <li>
-                        <a href="../index.html">Početna</a>
+                        <a href="index.html">Početna</a>
                     </li>
                     <li>
-                        <a href="../novosti.html">Novosti</a>
+                        <a href="novosti.html">Novosti</a>
                     </li>
                     <li>
-                        <a href="../o-nama.html">O nama</a>
+                        <a href="o-nama.html">O nama</a>
                     </li>
                     <li>
-                        <a href="../galerija.html">Galerija</a>
+                        <a href="galerija.html">Galerija</a>
                     </li>
                     <li>
-                        <a href="../kontakt.html">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="content-wrapper">
-                <div class="article-gallery">
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic-stenci.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic-stenci_mala.jpg" alt="Štenci Haldenskog goniča" title="Štenci Haldenskog goniča" />
-                        </a>
-                        <figcaption>Slika štenaca</figcaption>
-                    </figure>
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic_mala.jpg" alt="Haldenski gonič" title="Haldenski gonič" />
-                        </a>
-                        <figcaption>Slika Haldenskog goniča</figcaption>
-                    </figure>
+                <h1 class="my-4">Kontakt</h1>
+                <div class="contact">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d696.4248942141082!2d16.066931629259226!3d45.71706343505621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667e66fccc1629%3A0x6db86462f3941de9!2sZagreba%C4%8Dka%20Ul.%2076%2C%2010410%2C%20Velika%20Gorica!5e0!3m2!1shr!2shr!4v1641662435894!5m2!1shr!2shr"
+                        allowfullscreen=""
+                        loading="lazy"
+                    >
+                    </iframe>
+                    <form action="forma.php" method="post">
+                        <h2>Kontakt obrazac</h2>
+                        <div class="fgroup">
+                            <label for="fname">Ime *</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Vaše ime..." required />
+                        </div>
+                        <div class="fgroup">
+                            <label for="lname">Prezime *</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Vaše prezime..." required />
+                        </div>
+                        <div class="fgroup">
+                            <label for="lname">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="Vaš E-mail..." required />
+                        </div>
+                        <div class="fgroup">
+                            <label for="country">Država</label>
+                            <select id="country" name="country">
+                                <option value="">Odaberite državu</option>
+                                <option value="AF">Albanija</option>
+                                <option value="AD">Andora</option>
+                                <option value="AT">Austrija</option>
+                                <option value="BE">Belgija</option>
+                                <option value="BY">Bjelorusija</option>
+                                <option value="BA">Bosna i Hercegovina</option>
+                                <option value="BG">Bugarska</option>
+                                <option value="CY">Cipar</option>
+                                <option value="CZ">Češka</option>
+                                <option value="DK">Danska</option>
+                                <option value="EE">Estonija</option>
+                                <option value="FI">Finska</option>
+                                <option value="FR">Francuska</option>
+                                <option value="GR">Grčka</option>
+                                <option value="HR" selected>Hrvatska</option>
+                                <option value="IE">Irska</option>
+                                <option value="IS">Island</option>
+                                <option value="IT">Italija</option>
+                                <option value="LV">Latvija</option>
+                                <option value="LI">Lihtenštajn</option>
+                                <option value="LT">Litva</option>
+                                <option value="LU">Luksemburg</option>
+                                <option value="HU">Mađarska</option>
+                                <option value="MK">Sjeverna Makedonija</option>
+                                <option value="MT">Malta</option>
+                                <option value="MD">Moldova</option>
+                                <option value="FR">Francuska</option>
+                                <option value="MC">Monako</option>
+                                <option value="NL">Nizozemska</option>
+                                <option value="DE">Njemačka</option>
+                                <option value="PL">Poljska</option>
+                                <option value="PT">Portugal</option>
+                                <option value="RO">Rumunjska</option>
+                                <option value="RU">Rusija</option>
+                                <option value="SM">San Marino</option>
+                                <option value="SK">Slovačka</option>
+                                <option value="RS">Srbija</option>
+                                <option value="SE">Švedska</option>
+                                <option value="CH">Švicarska</option>
+                                <option value="TR">Turska</option>
+                                <option value="GB">Ujedinjeno Kraljevstvo</option>
+                                <option value="UA">Ukrajina</option>
+                            </select>
+                        </div>
+                        <div class="fgroup">
+                            <label for="subject">Poruka</label>
+                            <textarea id="subject" name="subject" placeholder="Vaša poruka..."></textarea>
+                        </div>
+                        <div class="fgroup fbtn mt-4 mb-2">
+				            <input type="submit" value="Pošalji" />
+                            <input type="reset" value="Izbriši" />
+                        </div>
+                    </form>
                 </div>
-                <p class="my-1 article-date">Objavljeno: <time datetime="2022-01-03">03.01.2022.</time></p>
-                <h1 class="my-4 custom-title">Haldenski gonič</h1>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća.
-                </p>
-                <p>
-                    Pasmina Haldenski gonič, kao i ostali norveški goniči, nije pas čopora. Halden Hound ima izražajnu trobojnu dlaku što pridonosi njezinoj atraktivnosti.
-                    Ova norveška pasmina se koristi za lov na zečeve, a ime je dobila po norveškom gradu Haldenu.
-                </p>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća. 
-                    Ova pasmina pasa koji love pomoću njuha je poznata po lakoći kojom graciozno juri za svojim plijenom-kunićem. Haldenski gonič je nastao križanjem jednog od izvorno norveških pasa s engleskim, njemačkim i švedskim goničima koji love pomoću njuha. 
-                </p>
-                <p>
-                    Iako je pasminski standard utemeljen u 1950-ima i često ih se vidi u Norveškoj, relativno su nepoznati u drugim zemljama ljubitelja pasa. Ova pasmina je vitke građe koja im omogućuje da budu jako brzi.
-                    U Norveškoj ih se smatra jednim od najboljih lovačkih pasa, jer posjeduju veliku izdržljivost i poznati su po tome da gone svoj plijen kilometrima bez umora i odustajanja. 
-                </p>
-                <p>
-                    Osim tijela stvorenog za brzinu i okretnost, ovi psi imaju mišićave kosti čvrstih kostiju. Uzgajivači haldenskih goniča nastoje očuvati idealan oblik šape, koja mora biti visoka i uska, a između prstiju bi trebale rasti guste dlake. Ovaj oblik šape pomaže kod očuvanja topline i daje psu veću stabilnost i elastičnost dok lovi i kreće se preko teškog terena prekrivenog snijegom.
-                </p>
-                <p>
-                    Haldenski gonič je možda građen elegantno i poznat je po tome što je izvrstan lovac, no ovaj pas ima i druge očaravajuće kvalitete. Posljednjih godina, ovaj čuveni lovac se razvio u divnog kućnog pratitelja.
-                    Kad lovi kuniće i lisice ova energična pasmina pokazuje samostalnost i veliku izdržljivost, no kod kuće je miroljubiv i privržen-idealan drug u dječjoj igri i savršeni pratitelj aktivnog gospodara.
-                </p>
-                <a class="back my-4" href="../novosti.html">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-                    </svg>
-                    <span>
-                        Povratak na novosti
-                    </span>
-                </a>
             </div>
         </main>
         <footer class="mt-2">
@@ -221,7 +217,5 @@
                 </a>
             </p>
         </footer>
-        <div id="viewer" class="viewer">
-        </div>
     </body>
 </html>

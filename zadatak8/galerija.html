@@ -3,14 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="description"
-            content="Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća."
-        />
-        <meta
-            name="keywords"
-            content="Haldenski gonič, gonič, norveška, pasmina"
-        />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
         <meta name="author" content="Martin Bondi" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,8 +13,8 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Haldenski gonič - Hunting - Portal za lovce</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Galerija - Hunting - Portal za lovce</title>
         <script>
             let menu;
             let main_nav;
@@ -52,7 +46,7 @@
             let viewer;
 
             const galleryView = () => {
-                gallery = document.querySelectorAll(".article-gallery > .figure-popup > a");
+                gallery = document.querySelectorAll(".gallery-grid > figure > a");
 
                 viewer = document.getElementById("viewer");
 
@@ -87,8 +81,8 @@
             <div class="banner">
                 <div class="banner-content">
                     <div class="logo">
-                        <a href="../index.html"
-                            ><img src="../img/logo.svg" alt="Hunting logo"
+                        <a href="index.html"
+                            ><img src="img/logo.svg" alt="Hunting logo"
                         /></a>
                     </div>
                 </div>
@@ -104,71 +98,137 @@
             <nav id="main-nav">
                 <ul>
                     <li>
-                        <a href="../index.html">Početna</a>
+                        <a href="index.html">Početna</a>
                     </li>
                     <li>
-                        <a href="../novosti.html">Novosti</a>
+                        <a href="novosti.html">Novosti</a>
                     </li>
                     <li>
-                        <a href="../o-nama.html">O nama</a>
+                        <a href="o-nama.html">O nama</a>
                     </li>
                     <li>
-                        <a href="../galerija.html">Galerija</a>
+                        <a href="galerija.html">Galerija</a>
                     </li>
                     <li>
-                        <a href="../kontakt.html">Kontakt</a>
+                        <a href="kontakt.html">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
             <div class="content-wrapper">
-                <div class="article-gallery">
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic-stenci.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic-stenci_mala.jpg" alt="Štenci Haldenskog goniča" title="Štenci Haldenskog goniča" />
+                <h1 class="my-4">Galerija</h1>
+                <div class="gallery-grid">
+                    <figure>
+                        <a href="img/galerija/divokoza.jpg">
+                            <img
+                                src="img/galerija/divokoza_mala.jpg"
+                                alt="divokoza"
+                                title="divokoza"
+                            />
                         </a>
-                        <figcaption>Slika štenaca</figcaption>
+                        <figcaption>Divokoza</figcaption>
                     </figure>
-                    <figure class="figure-popup">
-                        <a href="../img/novosti/haldenski-gonic/haldenski-gonic.jpg">
-                            <img src="../img/novosti/haldenski-gonic/haldenski-gonic_mala.jpg" alt="Haldenski gonič" title="Haldenski gonič" />
-                        </a>
-                        <figcaption>Slika Haldenskog goniča</figcaption>
+                    <figure>
+                        <a href="img/galerija/jelen_lopatar.jpg"
+                            ><img
+                                src="img/galerija/jelen_lopatar_mala.jpg"
+                                alt="jelen lopatar"
+                                title="jelen lopatar"
+                        /></a>
+                        <figcaption>Jelen lopatar</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/fazan.jpg"
+                            ><img
+                                src="img/galerija/fazan_mala.jpg"
+                                alt="fazan"
+                                title="fazan"
+                        /></a>
+                        <figcaption>Fazan</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/kanadski_jelen.jpg"
+                            ><img
+                                src="img/galerija/kanadski_jelen_mala.jpg"
+                                alt="kanadski jelen"
+                                title="kanadski jelen"
+                        /></a>
+                        <figcaption>Kanadski jelen</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/Kuna_zlatica.jpg"
+                            ><img
+                                src="img/galerija/Kuna_zlatica_mala.jpg"
+                                alt="kuna zlatica"
+                                title="kuna zlatica"
+                        /></a>
+                        <figcaption>Kuna zlatica</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/lisica.jpg"
+                            ><img
+                                src="img/galerija/lisica_mala.jpg"
+                                alt="lisica"
+                                title="lisica"
+                        /></a>
+                        <figcaption>Lisica</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/liska.jpg"
+                            ><img
+                                src="img/galerija/liska_mala.jpg"
+                                alt="liska"
+                                title="liska"
+                        /></a>
+                        <figcaption>Liska</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/lovac.jpg"
+                            ><img
+                                src="img/galerija/lovac_mala.jpg"
+                                alt="lovac"
+                                title="lovac"
+                        /></a>
+                        <figcaption>Lovac</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/muflon.jpg"
+                            ><img
+                                src="img/galerija/muflon_mala.jpg"
+                                alt="muflon"
+                                title="muflon"
+                        /></a>
+                        <figcaption>Muflon</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/munsterlander.jpg"
+                            ><img
+                                src="img/galerija/munsterlander_mala.jpg"
+                                alt="münsterländer"
+                                title="münsterländer"
+                        /></a>
+                        <figcaption>Münsterländer</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/smedi_medvjed.jpg"
+                            ><img
+                                src="img/galerija/smedi_medvjed_mala.jpg"
+                                alt="smeđi medvjed"
+                                title="smeđi medvjed"
+                        /></a>
+                        <figcaption>Smeđi medvjed</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="img/galerija/sob.jpg"
+                            ><img
+                                src="img/galerija/sob_mala.jpg"
+                                alt="sob"
+                                title="sob"
+                        /></a>
+                        <figcaption>Sob</figcaption>
                     </figure>
                 </div>
-                <p class="my-1 article-date">Objavljeno: <time datetime="2022-01-03">03.01.2022.</time></p>
-                <h1 class="my-4 custom-title">Haldenski gonič</h1>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća.
-                </p>
-                <p>
-                    Pasmina Haldenski gonič, kao i ostali norveški goniči, nije pas čopora. Halden Hound ima izražajnu trobojnu dlaku što pridonosi njezinoj atraktivnosti.
-                    Ova norveška pasmina se koristi za lov na zečeve, a ime je dobila po norveškom gradu Haldenu.
-                </p>
-                <p>
-                    Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća. 
-                    Ova pasmina pasa koji love pomoću njuha je poznata po lakoći kojom graciozno juri za svojim plijenom-kunićem. Haldenski gonič je nastao križanjem jednog od izvorno norveških pasa s engleskim, njemačkim i švedskim goničima koji love pomoću njuha. 
-                </p>
-                <p>
-                    Iako je pasminski standard utemeljen u 1950-ima i često ih se vidi u Norveškoj, relativno su nepoznati u drugim zemljama ljubitelja pasa. Ova pasmina je vitke građe koja im omogućuje da budu jako brzi.
-                    U Norveškoj ih se smatra jednim od najboljih lovačkih pasa, jer posjeduju veliku izdržljivost i poznati su po tome da gone svoj plijen kilometrima bez umora i odustajanja. 
-                </p>
-                <p>
-                    Osim tijela stvorenog za brzinu i okretnost, ovi psi imaju mišićave kosti čvrstih kostiju. Uzgajivači haldenskih goniča nastoje očuvati idealan oblik šape, koja mora biti visoka i uska, a između prstiju bi trebale rasti guste dlake. Ovaj oblik šape pomaže kod očuvanja topline i daje psu veću stabilnost i elastičnost dok lovi i kreće se preko teškog terena prekrivenog snijegom.
-                </p>
-                <p>
-                    Haldenski gonič je možda građen elegantno i poznat je po tome što je izvrstan lovac, no ovaj pas ima i druge očaravajuće kvalitete. Posljednjih godina, ovaj čuveni lovac se razvio u divnog kućnog pratitelja.
-                    Kad lovi kuniće i lisice ova energična pasmina pokazuje samostalnost i veliku izdržljivost, no kod kuće je miroljubiv i privržen-idealan drug u dječjoj igri i savršeni pratitelj aktivnog gospodara.
-                </p>
-                <a class="back my-4" href="../novosti.html">
-                    <svg viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
-                    </svg>
-                    <span>
-                        Povratak na novosti
-                    </span>
-                </a>
             </div>
         </main>
         <footer class="mt-2">
