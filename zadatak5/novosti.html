@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="description"
+            content="Najnovije novosti iz portala 'Hunting'. Pratite sve vezano za lovstvo, lovno streljaštvo i lovni turizam."
+        />
+        <meta
+            name="keywords"
+            content="novosti, najnovije, objave, članci, lovstvo, lovno streljaštvo, lovni turizam"
+        />
+        <meta name="author" content="Martin Bondi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Novosti - Hunting - Portal za lovce</title>
+        <script>
+            let menu;
+            let main_nav;
+            let open_nav = false;
+
+            window.addEventListener("load", () => {
+                menu = document.getElementById("menu");
+                main_nav = document.getElementById("main-nav");
+
+                menu.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    openClose();
+                });
+            });
+
+            const openClose = () => {
+                if (open_nav) {
+                    main_nav.classList.remove("open");
+                    open_nav = false;
+                } else {
+                    main_nav.className += "open";
+                    open_nav = true;
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="logo">
+                        <a href="index.html"
+                            ><img src="img/logo.svg" alt="Hunting logo"
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <a id="menu" class="menu" href="#">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+                    />
+                </svg>
+            </a>
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">Početna</a>
+                    </li>
+                    <li>
+                        <a href="novosti.html">Novosti</a>
+                    </li>
+                    <li>
+                        <a href="o-nama.html">O nama</a>
+                    </li>
+                    <li>
+                        <a href="galerija.html">Galerija</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content-wrapper news">
+                <h1 class="my-4">Novosti</h1>
+                <article class="news-article">
+                    <div class="article-image">
+                        <a href="#">
+                            <img src="img/novosti/jelen_lopatar_thumbnail.jpg" alt="Jelen lopatar ženka" title="Jelen lopatar ženka" />
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <p class="mt-0 date">Objavljeno: <time datetime="2022-01-05">05.01.2022.</time></p>
+                        <a href="#">
+                            <h2 class="mt-1">Jelen lopatar</h2>
+                        </a>
+                        <p>
+                            Jelen lopatar je uvjetno alohtona vrsta u Hrvatskoj - Mediteran je njegovo prirodno stanište i nekada je nastanjivao i područje Hrvatske.
+                            Prepoznaje se po rogovlju u obliku lopate, a starenjem se razvija i najdonji parožak lopate - ostruga.
+                        </p>
+                        <a class="readmore" href="#">Pročitaj više</a>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <div class="article-image">
+                        <a href="#">
+                            <img src="img/novosti/haldenski-gonic_thumbnail.jpg" alt="Haldenski gonič" title="Haldenski gonič" />
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <p class="mt-0 date">Objavljeno: <time datetime="2022-01-03">03.01.2022.</time></p>
+                        <a href="#">
+                            <h2 class="mt-1">Haldenski gonič</h2>
+                        </a>
+                        <p>
+                            Haldenski gonič je jedan od norveških goniča kunića. Ime je dobio po gradu Haldenu gdje je pasmina nastala početkom 20. stoljeća. Pasmina Haldenski gonič, kao i ostali norveški goniči, nije pas čopora. Halden Hound ima izražajnu trobojnu dlaku što pridonosi njezinoj atraktivnosti.
+                            Ova norveška pasmina se koristi za lov na zečeve, a ime je dobila po norveškom gradu Haldenu.
+                        </p>
+                        <a class="readmore" href="#">Pročitaj više</a>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <div class="article-image">
+                        <a href="#">
+                            <img src="img/novosti/divlja_svinja_thumbnail.jpg" alt="Divlja svinja" title="Divlja svinja" />
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <p class="mt-0 date">Objavljeno: <time datetime="2021-12-22">22.12.2021.</time></p>
+                        <a href="#">
+                            <h2 class="mt-1">Divlja svinja</h2>
+                        </a>
+                        <p>
+                            Divlja svinja pripada porodici svinja (Suidae) i predak je pitome svinje. Vepar je muška jedinka, krmača ženska, prasad je starosti do godine dana a nazimad od godine do dvije dana. Zanimljivo je da je zbog velikih šteta koje je činila gotovo istrijebljena na prijelazu iz 18. u 19. stoljeće – tamanilo ju se svim sredstvima! Trofej predstavljaju očnjaci - kljove vepra.
+                        </p>
+                        <a class="readmore" href="#">Pročitaj više</a>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <div class="article-image">
+                        <a href="#">
+                            <img src="img/novosti/grcki_gonic_thumbnail.jpg" alt="Grčki gonič" title="Grčki gonič" />
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <p class="mt-0 date">Objavljeno: <time datetime="2021-12-15">15.12.2021.</time></p>
+                        <a href="#">
+                            <h2 class="mt-1">Grčki gonič</h2>
+                        </a>
+                        <p>
+                            Helenski gonič je "pravi" lovački pas, idealan za surove uvjete, stjenovite terene i podneblje na sjeveru Grčke. U paru ili čoporu, helenski gonič koristi svoju izdržljivost i sposobnost slijeđenja mirisnog traga u traganju za divljim svinjama i zečevima. Nevjerojatno je hitar i snažan za svoju veličinu.
+                        </p>
+                        <a class="readmore" href="#">Pročitaj više</a>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <div class="article-image">
+                        <a href="#">
+                            <img src="img/novosti/sojka_krestalica_thumbnail.jpg" alt="Šojka kreštalica" title="Šojka kreštalica" />
+                        </a>
+                    </div>
+                    <div class="article-content">
+                        <p class="mt-0 date">Objavljeno: <time datetime="2021-12-05">05.12.2021.</time></p>
+                        <a href="#">
+                            <h2 class="mt-1">Šojka kreštalica</h2>
+                        </a>
+                        <p>
+                            To je lijepa, zanimljiva i prilično kontroverzna ptica. Jedna je od rijetkih ptica koja ne zna hodati, nego samo skakutati. Neki je vole i smatraju korisnom, dok je drugi ne vole i smatraju je štetnom pticom.
+                            Lovci je ne vole jer im uništava mlade fazane, golubove, drozdove, kosove, mlade ptice i jaja pjevica. U tome je pravi razbojnik. Ne vole je ni zbog njenog glasnog najavljivanja lovca u šumi i upozoravnja druge divljači. Ipak, lovcima može biti i korisna kada pritajeni u zasjedi čekaju lisicu, jer šojka posebno alarmantno upozorava na dolazak lisice i kao da za to ima jači, uporniji način upozoravanja.
+                        </p>
+                        <a class="readmore" href="#">Pročitaj više</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="mt-2">
+            <div>
+                <p class="h4 footer-color mt-2 mb-4">
+                    Pratite nas na društvenim mrežama:
+                </p>
+                <ul class="mb-2">
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">
+                Copyright &copy; 2022 Martin Bondi
+                <a href="https://github.com/m4a6mb/projektni_zadatak">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            fill="currentColor"
+                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+                        />
+                    </svg>
+                </a>
+            </p>
+        </footer>
+    </body>
+</html>
